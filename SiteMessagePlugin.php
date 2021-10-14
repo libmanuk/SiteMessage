@@ -39,8 +39,8 @@
         'public_items_browse_each',
         'public_items_search',
         'public_items_show',
-	      'define_routes',
-	      'config',
+	'define_routes',
+	'config',
         'config_form'
 	);
 
@@ -94,7 +94,7 @@
     
     public function hookConfig($args)
     {
-    		$post = $args['post'];
+    	$post = $args['post'];
         set_option('site_message_stmt',$post['site_message_stmt']);
         set_option('site_message_stmt_ttl',$post['site_message_stmt_ttl']);
         set_option('background_color',$post['background_color']);
@@ -113,9 +113,9 @@
     }
     
     public function hookPublicHead()
-	  {
-		    queue_css_file('sitemessage');
-	  }
+    {
+	queue_css_file('sitemessage');
+    }
 
     public function hookPublicBody($args)
     {
