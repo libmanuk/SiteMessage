@@ -289,11 +289,11 @@
 		    if ($flag == "1") {
         		$stmt_ttl = get_option('site_message_stmt_ttl');
         		$stmt = get_option('site_message_stmt');
-            echo "<div class=\"page-site-message-statement\" style=\"background:$bgcolor;\">";
-        	    if (!empty($stmt_ttl)):	
+            		      echo "<div class=\"page-site-message-statement\" style=\"background:$bgcolor;\">";
+        	    		if (!empty($stmt_ttl)):	
 			          echo "<h3>$stmt_ttl</h3>";
 			        endif;
-  			echo "<p>$stmt</p></div>";
+  			    echo "<p>$stmt</p></div>";
 	  	}
     }
 
